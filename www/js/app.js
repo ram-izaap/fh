@@ -32,42 +32,106 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.notifications', {
+    url: '/notifications',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/notifications.html'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.home', {
+      url: '/home',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/home.html'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+   
+
+    .state('app.search', {
+      url: '/search',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/search.html',
+          controller: 'SearchCtrl'
         }
       }
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.articles', {
+    url: '/articles',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/articles.html',
+        controller: 'ArticlesCtrl'
+      }
+    }
+  })
+
+   .state('app.myactivity', {
+    url: '/myactivity',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/myactivity.html',
+        controller: 'MyactivityCtrl'
+      }
+    }
+  })
+
+
+    .state('app.videos', {
+    url: '/videos',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/videos.html',
+        controller: 'VideosCtrl'
+      }
+    }
+  })
+
+
+     .state('app.audio', {
+    url: '/audio',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/audio.html',
+        controller: 'AudioCtrl'
+      }
+    }
+  })
+
+      .state('app.webrants', {
+    url: '/webrants',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/webrants.html',
+        controller: 'WebrantsCtrl'
+      }
+    }
+  })
+
+       .state('app.share', {
+    url: '/share',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/share.html',
+        controller: 'ShareCtrl'
+      }
+    }
+  })
+
+        .state('app.logout', {
+    url: '/logout',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/logout.html',
+        controller: 'LogoutCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/home');
 });

@@ -41,16 +41,38 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+
+
+.controller('NotificatonsCtrl', function($scope, $stateParams) {
 })
+
+.controller('HomeCtrl', function($scope, $stateParams) {
+})
+
+.controller('SearchCtrl', function($scope, $stateParams) {
+})
+
+.controller('ArticlesCtrl', function($scope, $stateParams) {
+})
+
+.controller('MyactivityCtrl', function($scope, $stateParams) {
+})
+
+.controller('VideosCtrl', function($scope, $stateParams) {
+})
+
+.controller('AudioCtrl', function($scope, $stateParams) {
+})
+
+.controller('WebrantsCtrl', function($scope, $stateParams) {
+})
+
+.controller('ShareCtrl', function($scope, $stateParams) {
+})
+
+.controller('LogoutCtrl', function($scope, $stateParams) {
+})
+
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
