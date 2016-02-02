@@ -9,6 +9,7 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
+ 
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -41,12 +42,25 @@ angular.module('starter.controllers', [])
   };
 })
 
-
-
-.controller('NotificatonsCtrl', function($scope, $stateParams) {
+.controller('ProfileCtrl', function($scope, $stateParams) {
 })
 
-.controller('HomeCtrl', function($scope, $stateParams) {
+.controller('NotificationsCtrl', function($scope, $stateParams) {
+})
+
+.controller('HomeCtrl', function($scope, $http) {
+
+  $scope.items = [];
+  $scope.loadMore = function() {
+    $http.get('/more-items').success(function(items) {
+      useItems(items);
+      $scope.$broadcast('scroll.infiniteScrollComplete');
+    });
+  };
+
+  $scope.$on('$stateChangeSuccess', function() {
+    $scope.loadMore();
+  });
 })
 
 .controller('SearchCtrl', function($scope, $stateParams) {
@@ -74,5 +88,3 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});

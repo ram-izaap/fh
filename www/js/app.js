@@ -32,12 +32,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+
+
+ .state('app.profile', {
+    url: '/profile',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/profile.html',
+        controller: 'ProfileCtrl'
+      }
+    }
+  })
+
+
   .state('app.notifications', {
     url: '/notifications',
     views: {
       'menuContent': {
-        templateUrl: 'templates/notifications.html'
-      }
+        templateUrl: 'templates/notifications.html',
+        controller: 'NotificationsCtrl'
+              }
     }
   })
 

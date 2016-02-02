@@ -1,5 +1,33 @@
 <ion-view view-title="MyActivity">
-  <ion-content>
-    <h1>myactivity</h1>
+  <ion-content ng-controller="MyactivityCtrl">
+   
+    <div class="list">
+
+    <a class="item item-avatar" href="#">
+      <img src="../img/3.jpg">
+      <h2>Venkman</h2>
+      <p>Back off, man. I'm a scientist.</p>
+    </a>
+
+
+    <a class="item item-avatar" href="#">
+      <img src="../img/5.jpg">
+      <h2>Venkman</h2>
+      <p>Back off, man. I'm a scientist.</p>
+    </a>
+
+     <a class="item item-avatar" href="#">
+      <img src="../img/5.jpg">
+      <h2>Venkman</h2>
+      <p>Back off, man. I'm a scientist.</p>
+    </a>
+</div>
+
+<ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="1%">
+  </ion-infinite-scroll>
+  
+
   </ion-content>
 </ion-view>
