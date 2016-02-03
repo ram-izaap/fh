@@ -32,6 +32,157 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  .state('app.initialpage', {
+    url: '/initialpage',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/initialpage.html',
+        controller: 'InitialpageCtrl'
+      }
+    }
+  })
+
+      .state('app.createacc', {
+    url: '/createacc',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/createacc.html',
+        controller: 'CreateaccCtrl'
+      }
+    }
+  })
+
+
+        .state('app.forgotpassword', {
+    url: '/forgotpassword',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/forgotpassword.html',
+        controller: 'ForgotpasswordCtrl'
+      }
+    }
+  })
+
+
+        .state('app.myclip', {
+    url: '/myclip',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/myclip.html',
+        controller: 'MyclipCtrl'
+      }
+    }
+  })
+
+
+        .state('app.createhuddle', {
+    url: '/createhuddle',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/createhuddle.html',
+        controller: 'CreatehuddleCtrl'
+      }
+    }
+  })
+
+
+        .state('app.createdhuddles', {
+    url: '/createdhuddles',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/createdhuddles.html',
+        controller: 'CreatedhuddlesCtrl'
+      }
+    }
+  })
+
+
+        .state('app.mypublichuddle', {
+    url: '/mypublichuddle',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/mypublichuddle.html',
+        controller: 'MypublichuddleCtrl'
+      }
+    }
+  })
+
+
+        .state('app.myprivatehuddle', {
+    url: '/myprivatehuddle',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/myprivatehuddle.html',
+        controller: 'MyprivatehuddleCtrl'
+      }
+    }
+  })
+
+
+        .state('app.findhuddle', {
+    url: '/findhuddle',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/findhuddle.html',
+        controller: 'FindhuddleCtrl'
+      }
+    }
+  })
+
+
+        .state('app.invitefriends', {
+    url: '/invitefriends',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/invitefriends.html',
+        controller: 'InvitefriendsCtrl'
+      }
+    }
+  })
+
+          .state('app.mobilecontacts', {
+    url: '/mobilecontacts',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/mobilecontacts.html',
+        controller: 'MobilecontactsCtrl'
+      }
+    }
+  })
+
+            .state('app.fanthemappusers', {
+    url: '/fanthemappusers',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/fanthemappusers.html',
+        controller: 'FanthemappusersCtrl'
+      }
+    }
+  })
+
+
+        .state('app.facebooklogin', {
+    url: '/facebooklogin',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/facebooklogin.html',
+        controller: 'FacebookloginCtrl'
+      }
+    }
+  })
+
+
+        .state('app.twitterlogin', {
+    url: '/twitterlogin',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/twitterlogin.html',
+        controller: 'TwitterloginCtrl'
+      }
+    }
+  })
+
+
 
 
  .state('app.profile', {
@@ -44,6 +195,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+.state('app.videocam', {
+    url: '/videocam',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/videocam.html',
+        controller: 'VideocamCtrl'
+      }
+    }
+  })
 
   .state('app.notifications', {
     url: '/notifications',
