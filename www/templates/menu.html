@@ -1,29 +1,17 @@
 <ion-side-menus enable-menu-with-back-views = "false">
   <ion-side-menu-content>
     <ion-nav-bar class = "bar-stable">
-      
       <ion-nav-back-button>
       </ion-nav-back-button>
-  
 
-  <!--Menu nav icon button icon button-->
-      <ion-nav-buttons side = "left">     
-            <button class = "button button-icon button-clear ion-navicon" menu-toggle = "left">
-            </button>
+      <ion-nav-buttons side = "left">
+
+      <button class = "button button-icon button-clear ion-navicon" menu-toggle = "left">
+
+      </button>
+      
       </ion-nav-buttons>
-       
-  
-  <!--video icon button--> 
-       <ion-nav-buttons side = "right" >  
-       <ion-item menu-close href = "#/app/videocam">
-            <button class = "button button-icon button-clear ion-ios-videocam" ></button>
-            </ion-item>
-             
-       </ion-nav-buttons>
-    
     </ion-nav-bar>
-    
-
     <ion-nav-view name = "menuContent"></ion-nav-view>
   </ion-side-menu-content>
   <ion-side-menu side = "left">
@@ -31,7 +19,7 @@
 
     <ion-header-bar class = "bar-stable">
      <ion-item menu-close href = "#/app/profile">
-      <img src="img/3.jpg">
+      <img src="../img/3.jpg">
      </ion-item>
       
       <h1 class = "title">Left</h1>
@@ -92,72 +80,8 @@
         <ion-item menu-close href = "#/app/logout">
           <button class = "button icon-left ion-log-out">Logout</button>
         </ion-item>
-
-        <ion-item menu-close href = "#/app/createacc">
-          <button class = "button icon-left ion-log-out">Create fanthem account</button>
-        </ion-item>
-
-        <ion-item menu-close ng-click="login()">
-          <button class = "button icon-left ion-log-out">Login</button>
-        </ion-item>
-
-         <ion-item menu-close href = "#/app/initialpage">
-          <button class = "button icon-left ion-log-out">Initial page</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/forgotpassword">
-          <button class = "button icon-left ion-log-out">Forgot Password</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/facebooklogin">
-          <button class = "button icon-left ion-log-out">login with facebook</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/twitterlogin">
-          <button class = "button icon-left ion-log-out">login with twitter</button>
-        </ion-item>
-<!--huddle pages-->
-        <ion-item menu-close href = "#/app/myclip">
-          <button class = "button icon-left ion-log-out">my clip</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/createhuddle">
-          <button class = "button icon-left ion-log-out">create huddle</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/createdhuddles">
-          <button class = "button icon-left ion-log-out">created huddles</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/findhuddle">
-          <button class = "button icon-left ion-log-out">find huddle</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/mypublichuddle">
-          <button class = "button icon-left ion-log-out">my public huddle</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/myprivatehuddle">
-          <button class = "button icon-left ion-log-out">my private huddle</button>
-        </ion-item>
-
-        <ion-item menu-close href = "#/app/invitefriends">
-          <button class = "button icon-left ion-log-out">invite friends</button>
-        </ion-item>
-
-
-         <ion-item menu-close href = "#/app/mobilecontacts">
-          <button class = "button icon-left ion-log-out">mobilecontacts</button>
-        </ion-item>
-      
-
-       <ion-item menu-close href = "#/app/fanthemappusers">
-          <button class = "button icon-left ion-log-out">fanthemappusers</button>
-        </ion-item>
-      
       
       </ion-list>
     </ion-content>
-
   </ion-side-menu>
 </ion-side-menus>

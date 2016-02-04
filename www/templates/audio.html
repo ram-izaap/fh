@@ -1,61 +1,57 @@
-<ion-view view-title="Fanthem">
-     <!--subheader-->
-      <div class="bar bar-subheader">
-      <h1 class="title">Audio</h1>
-      </div>
+<ion-view view-title="Audio">
   
 <ion-content ng-controller="AudioCtrl">
-
  
 <!--list card start-->
  <div class="list card">
-         <!--first card start-->
-        <div class="item item-avatar">
-          <img src="img/1.jpg">
-          <h2>Marty McFly</h2>
-          <p>November 05, 1955</p>
-        </div>
+   <!--first card start-->
+  <div class="item item-avatar">
+    <img src="../img/1.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
 
-        <div class="item item-body">
-          <img class="full-image" src="img/koala.jpg">
-           <ion-scroll>  
-              This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-            the content is from a card-body consisting of an image and paragraph text. The footer
-            consists of tabs, icons aligned left, within the card-footer.
-          </ion-scroll>
+  <div class="item item-body">
+    <img class="full-image" src="img/koala.jpg">
+     <ion-scroll>  
+        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </ion-scroll>
 
-          <p>
-             <button class="button ion-thumbsup">1 </button>
-             <button class="button ion-chatboxes">5 </button>
-             <button class="button ion-flag"></button>
-             <button class="button ion-eye"> 9 </button>
-          </p>
-    </div>
-   <!--first card end-->
+    <p>
+       <button class="button ion-thumbsup">1 </button>
+       <button class="button ion-chatboxes">5 </button>
+       <button class="button ion-flag"></button>
+       <button class="button ion-eye"> 9 </button>
+    </p>
+  </div>
+  <!--first card end-->
 
 
 <!--second card start-->
-        <div class="item item-avatar">
-          <img src="img/2.jpg">
-          <h2>Marty McFly</h2>
-          <p>November 05, 1955</p>
-        </div>
+  <div class="item item-avatar">
+    <img src="../img/2.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
 
-        <div class="item item-body">
-              <img class="full-image" src="img/Tulips.jpg">
-              <ion-scroll>  
-                   This is a "Facebook" styled Card. The header is created from a Thumbnail List item,the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.
-              </ion-scroll>
+  <div class="item item-body">
+    <img class="full-image" src="img/Tulips.jpg">
+    <ion-scroll>  
+        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </ion-scroll>
 
-              <p>
-                <button class="button ion-thumbsup">1 </button>
-                 <button class="button ion-chatboxes">5 </button>
-                 <button class="button ion-flag"></button>
-                 <button class="button ion-eye"> 9 </button>
-              </p>
-        </div>
+    <p>
+      <button class="button ion-thumbsup">1 </button>
+       <button class="button ion-chatboxes">5 </button>
+       <button class="button ion-flag"></button>
+       <button class="button ion-eye"> 9 </button>
+    </p>
+  </div>
 <!--second card end-->
-
 </div>
 <!--list card end-->
   
@@ -64,6 +60,7 @@
     on-infinite="loadMore()"
     distance="1%">
   </ion-infinite-scroll>
-
 </ion-content>
+
+
 </ion-view>
