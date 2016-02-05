@@ -1,5 +1,8 @@
 /* General
 ==================================*/
+
+
+
 h1 {
     color: #fff;
     text-shadow: 0 1px 0px #000;
@@ -65,7 +68,7 @@ p {
 ==================================*/
 .app-icon {
     background-color: #fff;
-    background: url('../img/crown.jpg') center;
+    background: url('../img/ionic.png') center;
     background-size: cover;
     border-radius: 50%;
     height: 125px;
@@ -77,3 +80,44 @@ p {
     position: fixed;
     bottom: 0;
 }
+
+ion-content { 
+    background:#9b0e14;
+  background-image: -moz-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%);
+  background-image: -webkit-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%);
+  background-image: -ms-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%); 
+}
+
+.item-md-label input { 
+    border-style: solid;
+  border-width: 3px;
+  border-color: rgb(245, 245, 246);
+  background-color: rgba(13, 14, 18, 0.11);
+  opacity: 0.35;
+}
+
+.button.button-assertive { background-color:#a3111e; border-color:transparent; }
+
+
+[data-page="login"] .list { margin-right:30px;}
+
+
+/* Flip navigation */
+[data-nav="slide"], [data-nav="slide"]:hover { background:#5b0509; }
+
+[data-nav="slide"] ion-item { color:#fff; font-size:1.2em;}
+
+[data-nav="slide"] ion-item .icon { 
+    margin-right:1.2em; 
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);  
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);   
+    transform: scale(1.5); 
+}
+
+/* Notification list */
+[data-list="notifications"]  {}
+[data-list="notifications"] a h2 { color:#fff; font-weight:bold;}
+[data-list="notifications"] p { color:#9da0b0;}
+[data-list="notifications"] .time-tracker { color: rgb(245, 245, 246);}
