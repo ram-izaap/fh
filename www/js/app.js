@@ -4,309 +4,125 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'ionMdInput'])
 
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
-
-    }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
+    $ionicPlatform.ready(function() {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if (window.cordova && window.cordova.plugins.Keyboard) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        }
+        if (window.StatusBar) {
+            // org.apache.cordova.statusbar required
+            StatusBar.styleDefault();
+        }
+    });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
-    .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
-  })
+    // Turn off caching for demo simplicity's sake
+    $ionicConfigProvider.views.maxCache(0);
 
-  .state('app.initialpage', {
-    url: '/initialpage',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/initialpage.html',
-        controller: 'InitialpageCtrl'
-      }
-    }
-  })
+    /*
+    // Turn off back button text
+    $ionicConfigProvider.backButton.previousTitleText(false);
+    */
 
-      .state('app.createacc', {
-    url: '/createacc',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/createacc.html',
-        controller: 'CreateaccCtrl'
-      }
-    }
-  })
-
-
-        .state('app.forgotpassword', {
-    url: '/forgotpassword',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/forgotpassword.html',
-        controller: 'ForgotpasswordCtrl'
-      }
-    }
-  })
-
-
-        .state('app.myclip', {
-    url: '/myclip',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/myclip.html',
-        controller: 'MyclipCtrl'
-      }
-    }
-  })
-
-
-        .state('app.createhuddle', {
-    url: '/createhuddle',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/createhuddle.html',
-        controller: 'CreatehuddleCtrl'
-      }
-    }
-  })
-
-
-        .state('app.createdhuddles', {
-    url: '/createdhuddles',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/createdhuddles.html',
-        controller: 'CreatedhuddlesCtrl'
-      }
-    }
-  })
-
-
-        .state('app.mypublichuddle', {
-    url: '/mypublichuddle',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/mypublichuddle.html',
-        controller: 'MypublichuddleCtrl'
-      }
-    }
-  })
-
-
-        .state('app.myprivatehuddle', {
-    url: '/myprivatehuddle',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/myprivatehuddle.html',
-        controller: 'MyprivatehuddleCtrl'
-      }
-    }
-  })
-
-
-        .state('app.findhuddle', {
-    url: '/findhuddle',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/findhuddle.html',
-        controller: 'FindhuddleCtrl'
-      }
-    }
-  })
-
-
-        .state('app.invitefriends', {
-    url: '/invitefriends',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/invitefriends.html',
-        controller: 'InvitefriendsCtrl'
-      }
-    }
-  })
-
-          .state('app.mobilecontacts', {
-    url: '/mobilecontacts',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/mobilecontacts.html',
-        controller: 'MobilecontactsCtrl'
-      }
-    }
-  })
-
-            .state('app.fanthemappusers', {
-    url: '/fanthemappusers',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/fanthemappusers.html',
-        controller: 'FanthemappusersCtrl'
-      }
-    }
-  })
-
-
-        .state('app.facebooklogin', {
-    url: '/facebooklogin',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/facebooklogin.html',
-        controller: 'FacebookloginCtrl'
-      }
-    }
-  })
-
-
-        .state('app.twitterlogin', {
-    url: '/twitterlogin',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/twitterlogin.html',
-        controller: 'TwitterloginCtrl'
-      }
-    }
-  })
-
-
-
-
- .state('app.profile', {
-    url: '/profile',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/profile.html',
-        controller: 'ProfileCtrl'
-      }
-    }
-  })
-
-.state('app.videocam', {
-    url: '/videocam',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/videocam.html',
-        controller: 'VideocamCtrl'
-      }
-    }
-  })
-
-  .state('app.notifications', {
-    url: '/notifications',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/notifications.html',
-        controller: 'NotificationsCtrl'
-              }
-    }
-  })
-
-  .state('app.home', {
-      url: '/home',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/home.html',
-          controller: 'HomeCtrl'
-        }
-      }
-    })
-   
-
-    .state('app.search', {
-      url: '/search',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/search.html',
-          controller: 'SearchCtrl'
-        }
-      }
+    $stateProvider.state('app', {
+        url: '/app',
+        abstract: true,
+        templateUrl: 'templates/menu.html',
+        controller: 'AppCtrl'
     })
 
-  .state('app.articles', {
-    url: '/articles',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/articles.html',
-        controller: 'ArticlesCtrl'
-      }
-    }
-  })
+    .state('app.activity', {
+        url: '/activity',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/activity.html',
+                controller: 'ActivityCtrl'
+            },
+            'fabContent': {
+                template: '<button id="fab-activity" class="button button-fab button-fab-top-right expanded button-energized-900 flap"><i class="icon ion-paper-airplane"></i></button>',
+                controller: function ($timeout) {
+                    $timeout(function () {
+                        document.getElementById('fab-activity').classList.toggle('on');
+                    }, 200);
+                }
+            }
+        }
+    })
 
-   .state('app.myactivity', {
-    url: '/myactivity',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/myactivity.html',
-        controller: 'MyactivityCtrl'
-      }
-    }
-  })
+    .state('app.friends', {
+        url: '/friends',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/friends.html',
+                controller: 'FriendsCtrl'
+            },
+            'fabContent': {
+                template: '<button id="fab-friends" class="button button-fab button-fab-top-left expanded button-energized-900 spin"><i class="icon ion-chatbubbles"></i></button>',
+                controller: function ($timeout) {
+                    $timeout(function () {
+                        document.getElementById('fab-friends').classList.toggle('on');
+                    }, 900);
+                }
+            }
+        }
+    })
 
+    .state('app.gallery', {
+        url: '/gallery',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/gallery.html',
+                controller: 'GalleryCtrl'
+            },
+            'fabContent': {
+                template: '<button id="fab-gallery" class="button button-fab button-fab-top-right expanded button-energized-900 drop"><i class="icon ion-heart"></i></button>',
+                controller: function ($timeout) {
+                    $timeout(function () {
+                        document.getElementById('fab-gallery').classList.toggle('on');
+                    }, 600);
+                }
+            }
+        }
+    })
 
-    .state('app.videos', {
-    url: '/videos',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/videos.html',
-        controller: 'VideosCtrl'
-      }
-    }
-  })
+    .state('app.login', {
+        url: '/login',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/login.html',
+                controller: 'LoginCtrl'
+            },
+            'fabContent': {
+                template: ''
+            }
+        }
+    })
 
+    .state('app.profile', {
+        url: '/profile',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/profile.html',
+                controller: 'ProfileCtrl'
+            },
+            'fabContent': {
+                template: '<button id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-plus"></i></button>',
+                controller: function ($timeout) {
+                    /*$timeout(function () {
+                        document.getElementById('fab-profile').classList.toggle('on');
+                    }, 800);*/
+                }
+            }
+        }
+    })
+    ;
 
-     .state('app.audio', {
-    url: '/audio',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/audio.html',
-        controller: 'AudioCtrl'
-      }
-    }
-  })
-
-      .state('app.webrants', {
-    url: '/webrants',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/webrants.html',
-        controller: 'WebrantsCtrl'
-      }
-    }
-  })
-
-       .state('app.share', {
-    url: '/share',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/share.html',
-        controller: 'ShareCtrl'
-      }
-    }
-  })
-
-        .state('app.logout', {
-    url: '/logout',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/logout.html',
-        controller: 'LogoutCtrl'
-      }
-    }
-  });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/home');
+    // if none of the above states are matched, use this as the fallback
+    $urlRouterProvider.otherwise('/app/login');
 });
