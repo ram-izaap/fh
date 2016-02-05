@@ -61,6 +61,30 @@ angular.module('starter.controllers', [])
   $scope.$on('$stateChangeSuccess', function() {
     $scope.loadMore();
   });
+
+  $ionicPlatform.ready(function() {
+    alert(8899);
+  });
+
+})
+
+.controller('InitialpageCtrl', function($scope, $stateParams) {
+})
+
+.controller('ForgotpasswordCtrl', function($scope, $stateParams) {
+})
+
+.controller('CreateaccCtrl', function($scope, $stateParams) {
+})
+
+.controller('TwitterloginCtrl', function($scope, $stateParams) {
+})
+
+.controller('FacebookloginCtrl', function($scope, $stateParams) {
+})
+
+
+.controller('VideocamCtrl', function($scope, $stateParams) {
 })
 
 .controller('SearchCtrl', function($scope, $stateParams) {
@@ -81,8 +105,52 @@ angular.module('starter.controllers', [])
 .controller('WebrantsCtrl', function($scope, $stateParams) {
 })
 
-.controller('ShareCtrl', function($scope, $stateParams) {
-})
+.controller('ShareCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+//huddle ctrls
+
+.controller('MyclipCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('CreatehuddleCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('CreatedhuddlesCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('FindhuddleCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('MypublichuddleCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('MyprivatehuddleCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('InvitefriendsCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+   .controller('MobilecontactsCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+  .controller('FanthemappusersCtrl', function($scope, $ionicActionSheet) {
+  
+   })
+
+
+
+
+   
 
 .controller('LogoutCtrl', function($scope, $stateParams) {
 })
