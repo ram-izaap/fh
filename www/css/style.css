@@ -99,7 +99,9 @@ ion-content {
 .button.button-assertive { background-color:#a3111e; border-color:transparent; }
 
 
-[data-page="login"] .list { margin-right:30px;}
+[data-page="login"] .list,
+[data-page="forgotpassword"] .list,
+[data-page="createacc"] .list  { margin-right:30px;}
 
 
 /* Flip navigation */
@@ -107,17 +109,41 @@ ion-content {
 
 [data-nav="slide"] ion-item { color:#fff; font-size:1.2em;}
 
-[data-nav="slide"] ion-item .icon { 
-    margin-right:1.2em; 
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);  
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);   
-    transform: scale(1.5); 
-}
+[data-nav="slide"] ion-item .icon:before { margin-right:1.2em;  -webkit-transform: scale(1.5); -moz-transform: scale(1.5); -ms-transform: scale(1.5); -o-transform: scale(1.5); transform: scale(1.5); }
 
 /* Notification list */
 [data-list="notifications"]  {}
 [data-list="notifications"] a h2 { color:#fff; font-weight:bold;}
 [data-list="notifications"] p { color:#9da0b0;}
 [data-list="notifications"] .time-tracker { color: rgb(245, 245, 246);}
+
+[data-role="r-password"] label { border-color: transparent; color:#fff; text-align:center}
+.fff { color: #fff; text-decoration: none}
+
+/* Landing */
+.button-twitter, .button-twitter.activated { background: #4099FF; color:#fff;}
+.button-twitter:hover  { color:#fff;}
+.button-facebook, .button-facebook.activated { background: #3B5998; color:#fff;}
+.button-facebook:hover  { color:#fff;}
+.button-twitter  i:before,
+.button-facebook  i:before{ -webkit-transform: scale(1.5); -moz-transform: scale(1.5); -ms-transform: scale(1.5); -o-transform: scale(1.5); transform: scale(1.5); margin-right:10px; }
+.button-login { background: #6f7179; color:#fff;}
+
+.button-assertive.activated { background-color: #9b0d19 !important}
+
+[data-account="yep"] { color:#fff; padding-top:20px;}
+
+
+.bar-header  {  
+    background-color:#b11322 !important; 
+    background-image: -moz-linear-gradient( 90deg, rgb(181,20,35) 0%, rgb(91,5,9) 99%) !important;
+    background-image: -webkit-linear-gradient( 90deg, rgb(181,20,35) 0%, rgb(91,5,9) 99%) !important;
+    background-image: -ms-linear-gradient( 90deg, rgb(181,20,35) 0%, rgb(91,5,9) 99%) !important;}
+
+
+.upload-image { text-align: center;}
+.upload-image img { max-width: 150px; max-height: 150px; border-radius: 50%;}
+[daat-upload="fresh"] [src="img/fresh-upload.png"] { border:1px solid rgba(245, 245, 246, 0.35);}
+
+
+

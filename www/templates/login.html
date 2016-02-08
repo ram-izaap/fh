@@ -1,4 +1,4 @@
-<ion-view view-title="Login" align-title="left" data-page="login">
+<ion-view align-title="left" data-page="login">
     <ion-content>
         <div class="hero no-header flat">
             <div class="content">
@@ -13,7 +13,23 @@
 
 
         <div class="padding">
-            <button ui-sref="app.profile" class="button button-full button-assertive waves-effect waves-button waves-light ink">Log In</button>
+            <button ui-sref="app.home" class="button button-full button-assertive waves-effect waves-button waves-light ink">Log In</button>
+        </div>
+
+        <div class="row">
+          <div class="col" data-role="r-password">
+            <ion-checkbox ng-model="filter.blue">Remember Password</ion-checkbox>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col test">
+            <a ui-sref="forgotpassword" class="fff">Forgot Password</a>
+          </div>
+
+          <div class="col test text-right">
+            <a ui-sref="createacc" class="fff">Create an Account</a>
+          </div>
         </div>
    
     </ion-content>

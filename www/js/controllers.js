@@ -95,6 +95,12 @@ angular.module('starter.controllers', [])
     ionicMaterialInk.displayEffect();*/
 })
 
+.controller('ForgotpasswordCtrl', function($scope, $stateParams) {  })
+
+.controller('CreateaccCtrl', function($scope, $stateParams) {  })
+
+
+
 .controller('FriendsCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
     // Set Header
     $scope.$parent.showHeader();

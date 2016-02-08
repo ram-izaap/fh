@@ -32,11 +32,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
 
     $stateProvider
 
+    .state('landing', {
+        url: '/landing',
+        templateUrl: 'templates/landing.html',
+        controller: 'LoginCtrl'
+    })
+
     .state('login', {
         url: '/login',
         templateUrl: 'templates/login.html',
         controller: 'LoginCtrl'
     })
+
+    .state('forgotpassword', {
+        url: '/forgotpassword',
+        templateUrl: 'templates/forgotpassword.html',
+        controller: 'ForgotpasswordCtrl'
+        
+      })
+
+
+    .state('createacc', {
+        url: '/createacc',
+        templateUrl: 'templates/createacc.html',
+        controller: 'ForgotpasswordCtrl'
+        
+      })
 
     .state('app', {
         url: '/app',
@@ -122,18 +143,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         }
     })
 
-    .state('app.login', {
-        url: '/login',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/login.html',
-                controller: 'LoginCtrl'
-            },
-            'fabContent': {
-                template: ''
-            }
-        }
-    })
+    
+
+    
+
 
     .state('app.profile', {
         url: '/profile',
@@ -155,5 +168,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
     ;
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/landing');
 });
