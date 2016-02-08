@@ -30,19 +30,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
     $ionicConfigProvider.backButton.previousTitleText(false);
     */
 
-    $stateProvider.state('app', {
+    $stateProvider
+
+    .state('login', {
+        url: '/login',
+        templateUrl: 'templates/login.html',
+        controller: 'LoginCtrl'
+    })
+
+    .state('app', {
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
         controller: 'AppCtrl'
     })
 
-    .state('app.activity', {
-        url: '/activity',
+    .state('app.notifications', {
+        url: '/notifications',
         views: {
             'menuContent': {
-                templateUrl: 'templates/activity.html',
-                controller: 'ActivityCtrl'
+                templateUrl: 'templates/notifications.html',
+                controller: 'HomeCtrl'
             },
             'fabContent': {
                 template: ''
@@ -63,18 +71,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         }
     })
 
-     .state('app.notifications', {
-        url: '/notifications',
+    .state('app.activity', {
+        url: '/activity',
         views: {
             'menuContent': {
-                templateUrl: 'templates/notifications.html',
-                controller: 'HomeCtrl'
+                templateUrl: 'templates/activity.html',
+                controller: 'ActivityCtrl'
             },
             'fabContent': {
                 template: ''
             }
         }
     })
+
+    
 
     .state('app.friends', {
         url: '/friends',
@@ -145,5 +155,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
     ;
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/login');
+    $urlRouterProvider.otherwise('/login');
 });

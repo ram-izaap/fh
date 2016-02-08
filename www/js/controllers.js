@@ -88,11 +88,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('LoginCtrl', function($scope, $timeout, $stateParams, ionicMaterialInk) {
-    $scope.$parent.clearFabs();
+    /*$scope.$parent.clearFabs();
     $timeout(function() {
         $scope.$parent.hideHeader();
     }, 0);
-    ionicMaterialInk.displayEffect();
+    ionicMaterialInk.displayEffect();*/
 })
 
 .controller('FriendsCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
@@ -170,7 +170,7 @@ angular.module('starter.controllers', [])
     }, 200);
 
     // Activate ink for controller
-    ionicMaterialInk.displayEffect();
+    //ionicMaterialInk.displayEffect();
 })
 
 .controller('GalleryCtrl', function($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
