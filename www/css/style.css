@@ -66,35 +66,13 @@ p {
 
 /* Login
 ==================================*/
-.app-icon {
-    background-color: #fff;
-    background: url('../img/ionic.png') center;
-    background-size: cover;
-    border-radius: 50%;
-    height: 125px;
-    margin: 0 auto;
-    width: 125px;
-}
+.app-icon { background-color: #fff; background: url('../img/ionic.png') center; background-size: cover; border-radius: 50%; height: 125px; margin: 0 auto; width: 125px; }
 
-.social-login {
-    position: fixed;
-    bottom: 0;
-}
+.social-login { position: fixed; bottom: 0; }
 
-ion-content { 
-    background:#9b0e14;
-  background-image: -moz-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%);
-  background-image: -webkit-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%);
-  background-image: -ms-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%); 
-}
+ion-content {  background:#9b0e14; background-image: -moz-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%); background-image: -webkit-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%); background-image: -ms-linear-gradient( 151.7deg, rgb(159,32,43) 0%, rgb(57,68,96) 100%); }
 
-.item-md-label input { 
-    border-style: solid;
-  border-width: 3px;
-  border-color: rgb(245, 245, 246);
-  background-color: rgba(13, 14, 18, 0.11);
-  opacity: 0.35;
-}
+.item-md-label input {  border-style: solid; border-width: 3px; border-color: rgb(245, 245, 246); background-color: rgba(13, 14, 18, 0.11); opacity: 0.35; }
 
 .button.button-assertive { background-color:#a3111e; border-color:transparent; }
 
@@ -127,7 +105,7 @@ ion-content {
 .button-facebook:hover  { color:#fff;}
 .button-twitter  i:before,
 .button-facebook  i:before{ -webkit-transform: scale(1.5); -moz-transform: scale(1.5); -ms-transform: scale(1.5); -o-transform: scale(1.5); transform: scale(1.5); margin-right:10px; }
-.button-login { background: #6f7179; color:#fff;}
+.button-login, .button-login.activated { background: #6f7179; color:#fff;}
 
 .button-assertive.activated { background-color: #9b0d19 !important}
 
@@ -144,6 +122,34 @@ ion-content {
 .upload-image { text-align: center;}
 .upload-image img { max-width: 150px; max-height: 150px; border-radius: 50%;}
 [daat-upload="fresh"] [src="img/fresh-upload.png"] { border:1px solid rgba(245, 245, 246, 0.35);}
+
+.huddle-share { background: transparent; box-shadow:0 0 0 transparent}
+.huddle-share i { color:#fff;}
+.huddle-share i:before { -webkit-transform: scale(1.5); -moz-transform: scale(1.5); -ms-transform: scale(1.5); -o-transform: scale(1.5); transform: scale(1.5); }
+
+.huddle-user-pic { display: inline-block; position: absolute }
+.huddle-user-pic img { border-radius:50%; max-width:56px; max-height:56px;}
+.huddle-user-name {display: inline-block; font-weight:bold; padding-left:80px; color:#fff; padding-top: 10px; }
+.home-huddles .post-info { font-weight:normal; color: #a8a8ab; margin:0;}
+
+
+[data-image="huddle"] { position: relative;}
+[data-image="huddle"] img {  width: 100%; height:100%;  border:4px solid rgba(0, 0, 0, 0.5)}
+[data-image="logo"] { max-width:25px; position: relative; top: 5px; margin-right: 5px;}
+
+.huddle-title { font-size:1.3em; color:#fff; padding:10px 0 15px 0; font-weight:bold;}
+.huddle-content { color:#fff; }
+
+.home-huddles{  padding-left:0; padding-right:0}
+
+[data-button="huddle"] { border:2px solid rgba(245, 245, 246, 0.55); background-color: rgba(145, 14, 25, 0.15); color:#fff; border-radius:50px; padding:5px 0; width:100%;  }
+[data-button="huddle"].activated { background-color: rgba(145, 14, 25, 0.55); border:2px solid  rgba(245, 245, 246, 0.90); }
+
+
+.home-huddles .item-body  { overflow-x:hidden}
+
+.home-huddles:last-child .dotted-line { border-bottom:1px dotted transparent; }
+
 
 
 

@@ -1,316 +1,233 @@
 <ion-view view-title="Home">
     <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+    
         
 
-        <div class="item card-item" data-role="single">
-            <div ui-sref="app.gallery" class="card">
-                000 
-            </div>
-        </div>
-
-        <div class="home-huddles">
-            <div class="row">
-                <div class="col col-75">1</div>
-                <div class="col">
-                <button class="button"><i class="icon ion-more"></i></button>
-                </div>
-            </div>
-        </div>
 
 
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <strong>Syed</strong> knows nothing.
-                    <div class="card-footer text-right">
-                        <i class="icon ion-chatbubbles positive"></i> 6
-                        <i class="icon ion-heart assertive"></i> 23
-                        <div class="pull-left">
-                            <i class="icon ion-clock"></i> just now
+        <!-- Looping point -->
+        <div class="home-huddles item card-item">
+            <div class="item-body">
+                <!-- huddle user and post details -->
+                <div class="row">
+                    <div class="col col-75">
+                        <div class="huddle-user-pic">
+                            <img src="img/jon-snow.jpg" />
+                        </div>                    
+                        <div class="huddle-user-name">
+                            Syed Mubarak
+                            <p class="post-info">4 days ago</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                    <div class="col text-right">
+                    <button class="button huddle-share"><i class="icon ion-more"></i></button>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
                 </div>
+                <!-- huddle image -->
+                <div class="row">
+                    <div class="col" data-image="huddle">
+                        <img src="img/huddles/huddle-1.jpg" class="full-image" />
+                    </div>
+                </div>
+                <!-- huddle title and contents -->
+                <div class="row">
+                    <div class="col" data-content="huddle">
+                        <div class="huddle-title" data-title="huddle"> <img src="img/ionic.png" alt="" data-image="logo" />Li Europan lingues es membres.</div>
+                        <ion-scroll zooming="true" direction="y" class="huddle-content" style="height: 100px">
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
 
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        <ion-scroll zooming="true" direction="y" style="height: 100px">
-                            This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                            the content is from a card-body consisting of an image and paragraph text. The footer
-                            consists of tabs, icons aligned left, within the card-footer.
+                            His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
 
-                            This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                            the content is from a card-body consisting of an image and paragraph text. The footer
-                            consists of tabs, icons aligned left, within the card-footer.
+                            It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when 
                         </ion-scroll>
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
                 </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                <!-- huddle extra details -->
+                <div class="row dotted-line">
+                    <div class="col">
+                        <button clas="huddle-likes" data-button="huddle"> <i class="ion-thumbsup"></i> 125</button>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
-                </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                    <div class="col">
+                        <button clas="huddle-comments" data-button="huddle"> <i class="ion-chatbubbles"></i> 88</button>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
-                </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                    <div class="col">
+                        <button clas="huddle-flag" data-button="huddle"> <i class="ion-ios-flag"></i> Flag</button>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
-                </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                    <div class="col">
+                        <button clas="huddle-views" data-button="huddle"> <i class="ion-eye"></i> 1k</button>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
                 </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
             </div>
         </div>
 
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+        <!-- Looping point -->
+        <div class="home-huddles item card-item">
+            <div class="item-body">
+                <!-- huddle user and post details -->
+                <div class="row">
+                    <div class="col col-75">
+                        <div class="huddle-user-pic">
+                            <img src="img/jon-snow.jpg" />
+                        </div>                    
+                        <div class="huddle-user-name">
+                            Syed Mubarak
+                            <p class="post-info">4 days ago</p>
+                        </div>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
-                </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                    <div class="col text-right">
+                    <button class="button huddle-share"><i class="icon ion-more"></i></button>
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
                 </div>
-
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item card-item">
-            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
-                <div class="item item-avatar item-text-wrap">
-                    <span class="avatar" style="background-image: url('img/jon-snow.jpg');"></span>
-                    <div class="pull-left">
-                        <strong>Syed</strong> knows nothing.
-                        <p><i class="icon ion-clock"></i> just now</p>
+                <!-- huddle image -->
+                <div class="row">
+                    <div class="col" data-image="huddle">
+                        <img src="img/huddles/huddle-1.jpg" class="full-image" />
                     </div>
-                    
-                    <div class="pull-right">
-                        <strong><i class="icon ion-android-more-vertical positive"></i></strong>
-                    </div>                    
                 </div>
+                <!-- huddle title and contents -->
+                <div class="row">
+                    <div class="col" data-content="huddle">
+                        <div class="huddle-title" data-title="huddle"> <img src="img/ionic.png" alt="" data-image="logo" />Li Europan lingues es membres.</div>
+                        <ion-scroll zooming="true" direction="y" class="huddle-content" style="height: 100px">
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
 
-                <div class="item item-body">
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                        the content is from a card-body consisting of an image and paragraph text. The footer
-                        consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">1 Like</a>
-                        <a href="#" class="subdued">5 Comments</a>
-                    </p>
+                            His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+
+                            It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when 
+                        </ion-scroll>
+                    </div>
                 </div>
-
+                <!-- huddle extra details -->
+                <div class="row dotted-line">
+                    <div class="col">
+                        <button clas="huddle-likes" data-button="huddle"> <i class="ion-thumbsup"></i> 1.5k</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-comments" data-button="huddle"> <i class="ion-chatbubbles"></i> 88</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-flag" data-button="huddle"> <i class="ion-ios-flag"></i> Flag</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-views" data-button="huddle"> <i class="ion-eye"></i> 458</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Looping point -->
+        <div class="home-huddles item card-item">
+            <div class="item-body">
+                <!-- huddle user and post details -->
+                <div class="row">
+                    <div class="col col-75">
+                        <div class="huddle-user-pic">
+                            <img src="img/jon-snow.jpg" />
+                        </div>                    
+                        <div class="huddle-user-name">
+                            Syed Mubarak
+                            <p class="post-info">4 days ago</p>
+                        </div>
+                    </div>
+                    <div class="col text-right">
+                    <button class="button huddle-share"><i class="icon ion-more"></i></button>
+                    </div>
+                </div>
+                <!-- huddle image -->
+                <div class="row">
+                    <div class="col" data-image="huddle">
+                        <img src="img/huddles/huddle-1.jpg" class="full-image" />
+                    </div>
+                </div>
+                <!-- huddle title and contents -->
+                <div class="row">
+                    <div class="col" data-content="huddle">
+                        <div class="huddle-title" data-title="huddle"> <img src="img/ionic.png" alt="" data-image="logo" />Li Europan lingues es membres.</div>
+                        <ion-scroll zooming="true" direction="y" class="huddle-content" style="height: 100px">
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+
+                            His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+
+                            It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when 
+                        </ion-scroll>
+                    </div>
+                </div>
+                <!-- huddle extra details -->
+                <div class="row dotted-line">
+                    <div class="col">
+                        <button clas="huddle-likes" data-button="huddle"> <i class="ion-thumbsup"></i> 125</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-comments" data-button="huddle"> <i class="ion-chatbubbles"></i> 88</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-flag" data-button="huddle"> <i class="ion-ios-flag"></i> Flag</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-views" data-button="huddle"> <i class="ion-eye"></i> 458</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Looping point -->
+        <div class="home-huddles item card-item">
+            <div class="item-body">
+                <!-- huddle user and post details -->
+                <div class="row">
+                    <div class="col col-75">
+                        <div class="huddle-user-pic">
+                            <img src="img/jon-snow.jpg" />
+                        </div>                    
+                        <div class="huddle-user-name">
+                            Syed Mubarak
+                            <p class="post-info">4 days ago</p>
+                        </div>
+                    </div>
+                    <div class="col text-right">
+                        <button class="button huddle-share"><i class="icon ion-more"></i></button>
+                    </div>
+                </div>
+                <!-- huddle image -->
+                <div class="row">
+                    <div class="col" data-image="huddle">
+                        <img src="img/huddles/huddle-1.jpg" class="full-image" />
+                    </div>
+                </div>
+                <!-- huddle title and contents -->
+                <div class="row">
+                    <div class="col" data-content="huddle">
+                        <div class="huddle-title" data-title="huddle"> <img src="img/ionic.png" alt="" data-image="logo" />Li Europan lingues es membres.</div>
+                        <ion-scroll zooming="true" direction="y" class="huddle-content" style="height: 100px">
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+
+                            His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+
+                            It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when 
+                        </ion-scroll>
+                    </div>
+                </div>
+                <!-- huddle extra details -->
+                <div class="row dotted-line">
+                    <div class="col">
+                        <button clas="huddle-likes" data-button="huddle"> <i class="ion-thumbsup"></i> 125</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-comments" data-button="huddle"> <i class="ion-chatbubbles"></i> 88</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-flag" data-button="huddle"> <i class="ion-ios-flag"></i> Flag</button>
+                    </div>
+                    <div class="col">
+                        <button clas="huddle-views" data-button="huddle"> <i class="ion-eye"></i> 458</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
     </ion-content>
 </ion-view>
