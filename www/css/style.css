@@ -148,7 +148,8 @@ ion-content {  background:#9b0e14; background-image: -moz-linear-gradient( 151.7
 
 .home-huddles .item-body  { overflow-x:hidden}
 
-.home-huddles:last-child .dotted-line { border-bottom:1px dotted transparent; }
+.home-huddles .dotted-line { border-bottom:1px dotted #fff; padding-bottom: 55px }
+.home-huddles:last-child .dotted-line { border-color:transparent; }
 
 
 
