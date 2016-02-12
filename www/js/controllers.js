@@ -162,11 +162,49 @@ angular.module('starter.controllers', [])
     ionicMaterialInk.displayEffect();
 })
 
-.controller('HomeCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
+.controller('HomeCtrl', function($scope, $stateParams, $ionicActionSheet,$timeout, ionicMaterialMotion, ionicMaterialInk) {
     $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
-    $scope.isExpanded = true;
-    $scope.$parent.setExpanded(true);
+    $scope.isExpanded = false;
+    $scope.$parent.setExpanded(false);
+    $scope.$parent.setHeaderFab('right');
+
+
+     $scope.show = function() {
+   // Show the action sheet
+   var hideSheet = $ionicActionSheet.show({
+     buttons: [
+       { text: 'share on Facebook ' },
+       { text: 'share on Twitter ' },
+       { text: 'share on Instagram ' },
+       { text: 'share with Friends ' } 
+     ],
+       
+     titleText: 'Select sharing option:',
+     cancelText: 'Cancel',
+     cancel:function() {// add cancel code..
+        },
+     buttonClicked: function(index) {
+       return true;
+     }//enable hidesheet will hide actionsheet
+   });
+ };
+
+    $timeout(function() {
+        ionicMaterialMotion.fadeSlideIn({
+            selector: '.animate-fade-slide-in .item'
+        });
+    }, 200);
+
+    // Activate ink for controller
+    //ionicMaterialInk.displayEffect();
+})
+
+.controller('SearchCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
+    $scope.$parent.showHeader();
+    $scope.$parent.clearFabs();
+    $scope.isExpanded = false;
+    $scope.$parent.setExpanded(false);
     $scope.$parent.setHeaderFab('right');
 
     $timeout(function() {

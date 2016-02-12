@@ -92,6 +92,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         }
     })
 
+        .state('app.search', {
+        url: '/search',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/search.html',
+                controller: 'SearchCtrl'
+            },
+            'fabContent': {
+                template: ''
+            }
+        }
+    })
+
     .state('app.activity', {
         url: '/activity',
         views: {
