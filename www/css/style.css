@@ -94,6 +94,8 @@ ion-content {  background:#9b0e14; background-image: -moz-linear-gradient( 151.7
 [data-list="notifications"] a h2 { color:#fff; font-weight:bold;}
 [data-list="notifications"] p { color:#9da0b0;}
 [data-list="notifications"] .time-tracker { color: rgb(245, 245, 246);}
+[data-list="notifications"] a {positiion:relative;}
+[data-list="notifications"] a:after { content: ""; border-bottom:1px dotted #fff !important; padding-bottom:10px; position: absolute; width:90%; left:5%; height: 1px; right:5%}
 
 [data-role="r-password"] label { border-color: transparent; color:#fff; text-align:center}
 .fff { color: #fff; text-decoration: none}
@@ -173,5 +175,5 @@ ion-content {  background:#9b0e14; background-image: -moz-linear-gradient( 151.7
 [data-huddle="search"] option { background: #fff; color:#252525; line-height: 1.2em; padding:10px; }
 
 
-
+[data-list="notifications"] a { /*border-bottom:1px dotted #fff !important; padding-bottom:10px;*/}
 
